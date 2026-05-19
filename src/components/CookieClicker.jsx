@@ -15,7 +15,7 @@ export default function CookieClicker() {
         <img 
           className={styles.btn}
           onClick={cookieClick}
-          src="../public/cookie.png"
+          src="/cookie.png"
           alt="Button that increase cookies, with an image of a cookie"
         />
         <h2>{cookieAmount}</h2>
