@@ -9,10 +9,17 @@ export default function CookieClicker() {
   }
 
   return (
-    <>
-      <h3>Cookie Clicker</h3>
-      <h4>{cookieAmount}</h4>
-      <img className={styles.clicker} onClick={cookieClick} src="../public/cookie.png" alt="Image of a cartoon chocolate Ciike" />
-    </>
+    <section className={styles.container}>
+      <h1>Cookie Clicker</h1>
+      <div className={styles.panel}>
+        <img 
+          className={styles.btn}
+          onClick={cookieClick}
+          src="../public/cookie.png"
+          alt="Button that increase cookies, with an image of a cookie"
+        />
+        <h2>{cookieAmount}</h2>
+      </div>
+    </section>
   )
 }
