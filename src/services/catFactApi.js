@@ -1,7 +1,9 @@
 const catFactApi = {
   baseUrl: "https://catfact.ninja/",
+  pages: 67, //amount of pages with cats 
   getRandFacts: async function(amount) {
-    const querry = `${this.baseUrl}facts?limit${amount}`;
+    const randPage = Math.ceil(Math.random() * this.pages);
+    const querry = `${this.baseUrl}facts?page=${randPage}&limit=${amount}`;
     return await this.get(querry);
   },
   get: async function(querry) {
@@ -17,7 +19,7 @@ const catFactApi = {
     } 
     catch (error) {
       console.error("Fetch failed:", error);
-      return {};
+      return [];
     }
   }
 }
