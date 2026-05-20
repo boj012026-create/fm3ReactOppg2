@@ -1,6 +1,6 @@
 const catFactApi = {
   baseUrl: "https://catfact.ninja/",
-  getFacts: async function(amount) {
+  getRandFacts: async function(amount) {
     const querry = `${this.baseUrl}facts?limit${amount}`;
     return await this.get(querry);
   },
