@@ -1,5 +1,6 @@
 import CookieClicker from "./components/CookieClicker";
 import CatFacts from "./components/CatFacts";
+import Users from "./components/Users";
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <CookieClicker/>
       <CatFacts/>
+      <Users/>
     </>
   )
 }
