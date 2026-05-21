@@ -1,3 +1,4 @@
+import cookie from "../../public/cookie.png"
 import { useState } from "react";
 import styles from "../styles/CookieClicker.module.css"
 
@@ -15,7 +16,7 @@ export default function CookieClicker() {
         <img 
           className={styles.btn}
           onClick={cookieClick}
-          src="/cookie.png"
+          src={cookie}
           alt="Button that increase cookies, with an image of a cookie"
         />
         <h2>{cookieAmount}</h2>
