@@ -1,0 +1,15 @@
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  padding: 1em;
+  border-radius: 4px;
+  box-shadow: 0 0 4px grey;
+  td {
+    background-color: #fffd;
+    border-radius: 4px 10% 10% 4px;
+  }
+  form {
+    box-shadow: 0 0 4px grey;
+  }
+}

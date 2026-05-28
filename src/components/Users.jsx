@@ -1,4 +1,5 @@
 import {useState} from "react";
+import styles from "../styles/User.module.css";
 import Table from "./Table";
 import UserForm from "./UserForm";
 
@@ -12,9 +13,9 @@ const mockData = [
 
 const [users, setUsers] = useState(mockData);
   return(
-    <>
-      <Table title="User Data" data={users}/>
+    <article className={styles.userContainer}>
       <UserForm users={users} setUsers={setUsers}/>
-    </>
+      <Table title="User Data" data={users}/>
+    </article>
   )
 }
