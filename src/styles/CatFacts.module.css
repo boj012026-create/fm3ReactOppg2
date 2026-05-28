@@ -6,13 +6,6 @@
   width: 25em;
   text-align: center;
   padding: 2em;
-  li {
-    border-radius: 1em 3em;
-    padding: 1em;
-    background-color: #fab9;
-    box-shadow: -1em -0.5em 1em black;
-    margin: 1em 0;
-  }
 }
 
 .catitle {
@@ -22,6 +15,13 @@
 
 .factList {
   list-style-type: cats;
+  li {
+    border-radius: 1em 3em;
+    padding: 1em;
+    background-color: #fab9;
+    box-shadow: -1em -0.5em 1em black;
+    margin: 1em 0;
+  }
 }
 
 @counter-style cats {
