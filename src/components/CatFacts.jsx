@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import catFactApi from "../services/catFactApi.js";
+import styles from "../styles/CatFacts.module.css"; 
 
 export default function CatFacts() {
   const [loading, setLoading] = useState(true);
@@ -24,14 +25,14 @@ export default function CatFacts() {
   useEffect(getCatFacts, [])
   
  return (
-   <>
-   <h3>cat facts</h3>
-     <ul>
+   <article className={styles.catainer}>
+   <h1 className={styles.catitle}>Cat Facts</h1>
+     <ul className={styles.factList}>
        {loading? (<h2>Loading</h2>) : facts.map( (f, i) => (
         <li id={i}>{f.fact}</li>
        ))}
       </ul>
    {error? (<h3>Failed getting CatFacts</h3>): ""} 
-   </>   
+   </article>   
  )  
 }

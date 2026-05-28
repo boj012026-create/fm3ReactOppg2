@@ -1,0 +1,31 @@
+.catainer {
+  background-color: #cad;
+  border: 4px solid plum;
+  border-radius: 1em 3em 9em;
+  box-shadow: 0 0 1em black;
+  width: 25em;
+  text-align: center;
+  padding: 2em;
+  li {
+    border-radius: 1em 3em;
+    padding: 1em;
+    background-color: #fab9;
+    box-shadow: -1em -0.5em 1em black;
+    margin: 1em 0;
+  }
+}
+
+.catitle {
+  color: #fee;
+  text-shadow: 4px -4px 4px black;
+}
+
+.factList {
+  list-style-type: cats;
+}
+
+@counter-style cats {
+  system: cyclic;
+  symbols: "😺" "🐈" "😼" "🐈‍⬛" "🐆";
+  suffix: " ";
+}
