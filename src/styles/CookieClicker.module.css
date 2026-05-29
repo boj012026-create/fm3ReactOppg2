@@ -21,7 +21,7 @@
   border-radius: 50%;
   padding: 1em;
   cursor: pointer;
-  box-shadow: 0 0 8px black;
+  /*box-shadow: 0 0 8px black;*/
   &:active {
     box-shadow: 0 0 4px black;
   }
